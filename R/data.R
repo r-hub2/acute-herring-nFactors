@@ -1,0 +1,105 @@
+
+#' Eigenvalues from classical studies
+#'
+#'  Classical examples of eigenvalues vectors used to study the number of factors
+#'  to retain in the litterature. These examples generally give the number of
+#'  subjects use to obtain these eigenvalues.
+#'  The number of subjects is used with the parallel analysis.
+#'
+#' Other datasets will be added in future versions of the package.
+#'
+#' @name dFactors
+#' @docType data
+#'
+#' @format A list of examples. For each example, a list is also used to give the eigenvalues
+#' vector and the number of subjects.
+#' \describe{
+#'   \item{Bentler}{$eigenvalues and $nsubjects}
+#'   \item{Buja}{$eigenvalues and $nsubjects}
+#'   \item{Cliff1}{$eigenvalues and $nsubjects}
+#'   \item{Cliff2}{$eigenvalues and $nsubjects}
+#'   \item{Cliff3}{$eigenvalues and $nsubjects}
+#'   \item{Hand}{$eigenvalues and $nsubjects}
+#'   \item{Harman}{$eigenvalues and $nsubjects}
+#'   \item{Lawley}{$eigenvalues and $nsubjects}
+#'   \item{Raiche}{$eigenvalues and $nsubjects}
+#'   \item{Tucker1}{$eigenvalues and $nsubjects}
+#'   \item{Tucker2}{$eigenvalues and $nsubjects}
+#' }
+#'
+#' @source
+#' Lawley and Hand dataset:  Bartholomew \emph{et al}. (2002, p. 123, 126)
+#'
+#' Bentler dataset:          Bentler and Yuan (1998, p. 139-140)
+#'
+#' Buja datasets:            Buja and Eyuboglu (1992, p. 516, 519) < Number of subjects not specified by Buja and Eyuboglu >
+#'
+#' Cliff datasets:           Cliff (1970, p. 165)
+#'
+#' Raiche dataset:           Raiche, Langevin, Riopel and Mauffette (2006)
+#'
+#' Raiche dataset:           Raiche, Riopel and Blais (2006, p. 9)
+#'
+#' Tucker datasets:          Tucker \emph{et al}. (1969, p. 442)
+#'
+#' @references Bartholomew, D. J., Steele, F., Moustaki, I. and Galbraith, J.
+#' I. (2002).  \emph{The analysis and interpretation of multivariate data for
+#' social scientists}. Boca Raton, FL: Chapman and Hall.
+#'
+#' Bentler, P. M. and Yuan, K.-H. (1998). Tests for linear trend in the
+#' smallest eigenvalues of the correlation matrix. \emph{Psychometrika, 63}(2),
+#' 131-144.
+#'
+#' Buja, A. and Eyuboglu, N. (1992). Remarks on parallel analysis.
+#' \emph{Multivariate Behavioral Research, 27}(4), 509-540.
+#'
+#' Cliff, N. (1970). The relation between sample and population characteristic
+#' vectors.  \emph{Psychometrika, 35}(2), 163-178.
+#'
+#' Hand, D. J., Daly, F., Lunn, A. D., McConway, K. J. and Ostrowski, E.
+#' (1994).  \emph{A handbook of small data sets}. Boca Raton, FL: Chapman and
+#' Hall.
+#'
+#' Lawley, D. N. and Maxwell, A. E. (1971). \emph{Factor analysis as a
+#' statistical method} (2nd edition). London: Butterworth.
+#'
+#' Raiche, G., Langevin, L., Riopel, M. and Mauffette, Y. (2006). Etude
+#' exploratoire de la dimensionnalite et des facteurs expliques par une
+#' traduction francaise de l'Inventaire des approches d'enseignement de
+#' Trigwell et Prosser dans trois universite quebecoises. \emph{Mesure et
+#' Evaluation en Education, 29}(2), 41-61.
+#'
+#' Raiche, G., Walls, T. A., Magis, D., Riopel, M. and Blais, J.-G. (2013).
+#' Non-graphical solutions for Cattell's scree test. Methodology, 9(1), 23-29.
+#'
+#' Tucker, L. D., Koopman, R. F. and Linn, R. L. (1969). Evaluation of factor
+#' analytic research procedures by mean of simulated correlation matrices.
+#' \emph{Psychometrika, 34}(4), 421-459.
+#'
+#' Zoski, K. and Jurs, S. (1993). Using multiple regression to determine the
+#' number of factors to retain in factor analysis. \emph{Multiple Linear
+#' Regression Viewpoint, 20}(1), 5-9.
+#'
+#' @keywords datasets
+#'
+#' @examples
+#' \dontrun{
+#' if(interactive()){
+#' # EXAMPLES FROM DATASET
+#'  data(dFactors)
+#'
+#' # COMMAND TO VISUALIZE THE CONTENT AND ATTRIBUTES OF THE DATASETS
+#'  names(dFactors)
+#'  attributes(dFactors)
+#'  dFactors$Cliff1$eigenvalues
+#'  dFactors$Cliff1$nsubjects
+#'
+#' # SCREE PLOT OF THE Cliff1 DATASET
+#'  plotuScree(dFactors$Cliff1$eigenvalues)
+#'  }
+#' }
+"dFactors"
+
+
+
+

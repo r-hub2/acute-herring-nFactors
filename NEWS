@@ -1,0 +1,123 @@
+        ******************************************************
+        *                                                    *
+        *  Changes and Developments in the nFactors Package  *
+        *                                                    *
+        ******************************************************
+
+------------------------------------------
+- Changes in nFactors 2.4.0 (2020-03-20) -
+------------------------------------------
+Use of the function methodss::class1() instead of the function class().
+
+Transition to Roxygen documentation.
+
+------------------------------------------
+- Changes in nFactors 2.3.3 (2011-12-16) -
+------------------------------------------
+ Changes done because the functions mean() and sd() in the moreStats() function
+ were depreciated with data.frames.
+
+ xMean <- sapply(x, mean) # mean(x) before change
+ xSd   <- sapply(x, sd)   # sd(x) before change
+
+------------------------------------------
+- Changes in nFactors 2.3.2 (2010-10-04) -
+------------------------------------------
+
+ Changes in this version are stricly limited to orthographical correction
+ of the documentation.
+
+
+------------------------------------------
+- Changes in nFactors 2.3.1 (2009-14-10) -
+------------------------------------------
+
+  o  Two bugs were fixed inside the function structureSim. The first one, at
+     line 21, is related to permutation analysis where the quantile paramater
+     of the function call stayed fixed at 0.95 even if the value is different
+     in the call. The variable quantile is now formally use in the call to
+     eigenBootParallel. The second bug was realted to an error in the column
+     names of the data.frame return from structureSim: the per and mean.eig
+     columns were unfortunalely inrerchanged. Version 2.3.1 fixed it.
+
+  o  Bug fixing was the occasion to introduce a new function used for a
+     paper proposed to Behaviormetrika, studySim. But this function is
+     useful for many other simulation settings.
+
+
+----------------------------------------
+- Changes in nFactors 2.3 (2009-15-09) -
+----------------------------------------
+
+  This version of nFactors is a major upgrade and so presents important
+  additions and modifications. Care was taken to not modified parameters from
+  version 2.2 calls so that functions and packages already requiring nFactors
+  will yet operate correctly in the future. But like with all mojor upgrades,
+  care must be taken and it is recommanded that developpers verify their
+  results. All the future upgrades won't have this potentiel problems.
+
+  o  Many new procedures to determine the number of components or factors to
+     retain are added: permutation and bootstrap parallel analysis, CNG,
+     Bentler and Yuan, Bartlett, Anderson, Lawley, Zosky and Jurs, etc.
+
+  o  Care is taken to uniformise the labelling of new functions and new
+     variables. According to the Java coding practice, with this labelling, the
+     names begin with a small character, and capitals are used inside for added
+     concepts.
+
+  o  It is now possible to do most of the nfactors package analysis on a
+     covariance matrix.
+
+  o  It is now possible to do most of the nfactors package analysis in the CFA
+     context.
+
+  o  The permutation parallel analysis of Buja and Eyuboglu (1992) is added.
+
+  o  It is now possible to bootstrap the eigenvalues from an empirical data
+     matrix.
+
+  o  New heuristic numerical indices are added to determine the number of
+     components/factores to retain: CNG, Zoski and Jurs multiple regression,
+     Joski and Jurs standard error of the scree, and Nelson R.
+
+  o  Likelihood ratio tests are added: Bartlet, Anderson, Lawley, and Bentler
+     and Yuan chi-squared.
+
+  o  The eigenComputes function computes eigenvalues conditional of the class
+     of the object from which data come from: eigenvalues from vector,
+     correlation/covariance matrix, or data from a data.frame.
+
+  o  The eigenFrom function determine the class of the object.
+
+  o  The corFA function is added to insert commulalities in the diagonal of a
+     correlation or a covariance matrix.
+
+  o  The makeCor function creates a full correlation/covariance matrix from a
+     matrix with lower part filled and upper part with zeros.
+
+  o  Functions are added to generate a factor structure (generateStructure)
+     and to simulate data and correlation matrices from a predefined factor
+     structure (structureSim).
+
+  o  A function, moreStats, is added to be computes additionnal statistics on a
+     numeric data.frame.
+
+  o  Utility functions for \code{nScree} class objects werw implemented:
+     is.nScree, plot.nScree, plot.nScree and summary.nScree.
+
+
+----------------------------------------
+- Changes in nFactors 2.2 (2009-02-06) -
+----------------------------------------
+
+  o  Considering the instabillity of the function factanal with ill
+     conditionned correlation matrices, new functions for computing factor
+     analysis are added: componentAxis, iteratePrincipalAxix, principalAxis and
+     principalComponents.
+
+  o  The diagReplace function replace the upper or the lower diagonal of a
+     correlation matrix with the respective lower or lower diagonal.
+
+  o  The rRecovery function is added for a verification of the quality of the
+     recovery of an initial correlation matrix.
+

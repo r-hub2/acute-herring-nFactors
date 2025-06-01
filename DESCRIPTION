@@ -1,0 +1,31 @@
+Package: nFactors
+Type: Package
+Title: Parallel Analysis and Other Non Graphical Solutions to the
+        Cattell Scree Test
+Version: 2.4.1.2
+Date: 2025-05-29
+Authors@R: c(
+    person(
+      given="Gilles", family="Raiche",
+      comment="Universite du Quebec a Montreal",
+      email = "raiche.gilles@uqam.ca",
+      role = c("aut", "cre")
+    ),
+    person(given="David", family="Magis", role = c("aut"))
+  )
+Description: Indices, heuristics, simulations and strategies to help determine the number of factors/components to retain in exploratory factor 
+       analysis (EFA) and principal component analysis (PCA).
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: stats, MASS, psych, lattice
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2025-06-01 20:14:26 UTC; raich
+Author: Gilles Raiche [aut, cre] (Universite du Quebec a Montreal),
+  David Magis [aut]
+Maintainer: Gilles Raiche <raiche.gilles@uqam.ca>

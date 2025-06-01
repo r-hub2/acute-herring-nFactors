@@ -1,0 +1,17 @@
+        ******************************************************
+        *                                                    *
+        *  Future Developments for the nFactors Package      *
+        *                                                    *
+        ******************************************************
+
+
+  o  Use of the polycor package to take in account correlation matrices
+     from discrete variables.
+
+  o  Add a gui, probably from the fgui package.
+
+  o  A global function to simplify estimations of the number of factors/dimensions.
+
+
+        ******************************************************
+        ******************************************************
